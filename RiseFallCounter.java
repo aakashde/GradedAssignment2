@@ -17,14 +17,14 @@ public class RiseFallCounter {
 
 	public int countFallNumber(boolean[] stockPriceStatusArray) {
 		// TODO Auto-generated method stub
-int riseCounter = 0;
+		int fallCounter = 0;
 		
 		for(int i=0;i<stockPriceStatusArray.length;i++)
 		{
 			if(!stockPriceStatusArray[i])
-				riseCounter++;
+				fallCounter++;
 		}
-		return riseCounter;
+		return fallCounter;
 		
 	}
 

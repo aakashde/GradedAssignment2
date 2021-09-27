@@ -1,5 +1,5 @@
 package com.problem1.service;
-
+//For performing sort in Ascending order with nlog(n) complexity as required
 public class MergeSortAscending {
 
 	public void sort(double[] array, int left, int right) {

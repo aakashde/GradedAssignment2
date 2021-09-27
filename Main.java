@@ -34,6 +34,7 @@ public class Main {
 		
 		int choiece = 0;
 		
+		//creating a copy of the Original Array so as to not to disturb the rising and falling of price of Stock sequence
 		
 		double stockArrayCopy[] = new double[noOfCompanies];
 		
@@ -76,7 +77,7 @@ public class Main {
 					break;
 				}
 				case 2:{
-					
+					//Traversing in reverse order to get descending order as the array is already sorted in ascending order
 					System.out.println("Stock prices in descending order are :");
 					for(int i=stockArrayCopy.length-1;i>=0;i--)
 					{
@@ -100,6 +101,8 @@ public class Main {
 				}
 				case 5:{
 					
+					//the searching operation is performed in the copy of the array as the same is already sorted
+					//hence we can implement binary sear algorithm
 					System.out.println("enter the key value");
 					double stock = Double.parseDouble(br.readLine());
 					int result = ss.isStockPresent(stockArrayCopy,stock);
